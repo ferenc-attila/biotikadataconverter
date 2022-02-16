@@ -1,11 +1,11 @@
-package tables.backgroundData;
+package tables.backgrounddata;
 
-public class Gender {
+public class CoordinateType {
 
     private Long code;
     private String description;
 
-    public Gender(Long code, String description) {
+    public CoordinateType(Long code, String description) {
         this.code = code;
         this.description = description;
     }

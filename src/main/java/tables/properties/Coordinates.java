@@ -1,6 +1,6 @@
 package tables.properties;
 
-import tables.backgroundData.CoordinateType;
+import tables.backgrounddata.CoordinateType;
 
 public class Coordinates {
 

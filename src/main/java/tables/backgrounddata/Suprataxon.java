@@ -1,11 +1,11 @@
-package tables.backgroundData;
+package tables.backgrounddata;
 
-public class Accuracy {
+public class Suprataxon {
 
     private Long code;
     private String description;
 
-    public Accuracy(Long code, String description) {
+    public Suprataxon(Long code, String description) {
         this.code = code;
         this.description = description;
     }

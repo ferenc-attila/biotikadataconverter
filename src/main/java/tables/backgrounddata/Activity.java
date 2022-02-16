@@ -1,11 +1,11 @@
-package tables.backgroundData;
+package tables.backgrounddata;
 
-public class Source {
+public class Activity {
 
     private Long code;
     private String description;
 
-    public Source(Long code, String description) {
+    public Activity(Long code, String description) {
         this.code = code;
         this.description = description;
     }

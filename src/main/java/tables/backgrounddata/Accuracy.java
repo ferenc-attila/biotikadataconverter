@@ -1,11 +1,11 @@
-package tables.backgroundData;
+package tables.backgrounddata;
 
-public class CoordinateType {
+public class Accuracy {
 
     private Long code;
     private String description;
 
-    public CoordinateType(Long code, String description) {
+    public Accuracy(Long code, String description) {
         this.code = code;
         this.description = description;
     }

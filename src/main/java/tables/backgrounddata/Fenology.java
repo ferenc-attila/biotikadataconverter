@@ -1,11 +1,11 @@
-package tables.backgroundData;
+package tables.backgrounddata;
 
-public class Suprataxon {
+public class Fenology {
 
     private Long code;
     private String description;
 
-    public Suprataxon(Long code, String description) {
+    public Fenology(Long code, String description) {
         this.code = code;
         this.description = description;
     }

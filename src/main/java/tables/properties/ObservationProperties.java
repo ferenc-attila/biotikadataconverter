@@ -1,6 +1,6 @@
 package tables.properties;
 
-import tables.backgroundData.Observer;
+import tables.backgrounddata.Observer;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;

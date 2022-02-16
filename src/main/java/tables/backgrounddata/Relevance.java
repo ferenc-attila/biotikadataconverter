@@ -1,11 +1,11 @@
-package tables.backgroundData;
+package tables.backgrounddata;
 
-public class Setup {
+public class Relevance {
 
     private Long code;
     private String description;
 
-    public Setup(Long code, String description) {
+    public Relevance(Long code, String description) {
         this.code = code;
         this.description = description;
     }
