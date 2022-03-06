@@ -1,11 +1,11 @@
 package tables.backgrounddata;
 
-public class Observer {
+public class Contributor {
 
     private Long code;
     private String name;
 
-    public Observer(Long code, String name) {
+    public Contributor(Long code, String name) {
         this.code = code;
         this.name = name;
     }

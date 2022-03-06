@@ -1,11 +1,11 @@
 package tables.backgrounddata;
 
-public class Fenology {
+public class Phenology {
 
     private Long code;
     private String description;
 
-    public Fenology(Long code, String description) {
+    public Phenology(Long code, String description) {
         this.code = code;
         this.description = description;
     }

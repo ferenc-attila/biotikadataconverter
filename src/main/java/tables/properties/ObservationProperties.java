@@ -1,6 +1,6 @@
 package tables.properties;
 
-import tables.backgrounddata.Observer;
+import tables.backgrounddata.Contributor;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -9,14 +9,20 @@ public class ObservationProperties {
 
     private LocalDateTime recordTime;
     private LocalDate date;
-    private Observer observer;
+    private Contributor observer;
     private Coordinates coordinates;
+    private String notes;
 
-    public ObservationProperties(LocalDateTime recordTime, LocalDate date, Observer observer, Coordinates coordinates) {
+    public ObservationProperties(LocalDateTime recordTime, LocalDate date, Contributor observer, Coordinates coordinates) {
         this.recordTime = recordTime;
         this.date = date;
         this.observer = observer;
         this.coordinates = coordinates;
+    }
+
+    public ObservationProperties(LocalDateTime recordTime, LocalDate date, Contributor observer, Coordinates coordinates, String notes) {
+        this(recordTime, date, observer, coordinates);
+        this.notes = notes;
     }
 
     public LocalDateTime getRecordTime() {
@@ -35,11 +41,11 @@ public class ObservationProperties {
         this.date = date;
     }
 
-    public Observer getObserver() {
+    public Contributor getObserver() {
         return observer;
     }
 
-    public void setObserver(Observer observer) {
+    public void setObserver(Contributor observer) {
         this.observer = observer;
     }
 
@@ -49,5 +55,13 @@ public class ObservationProperties {
 
     public void setCoordinates(Coordinates coordinates) {
         this.coordinates = coordinates;
+    }
+
+    public String getNotes() {
+        return notes;
+    }
+
+    public void setNotes(String notes) {
+        this.notes = notes;
     }
 }
