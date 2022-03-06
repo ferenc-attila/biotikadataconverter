@@ -1,4 +1,4 @@
-package tables.properties;
+package tables.data.properties;
 
 import tables.backgrounddata.Accuracy;
 import tables.backgrounddata.Contributor;

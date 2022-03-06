@@ -1,4 +1,4 @@
-package json;
+package service.json;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,14 +6,14 @@ import java.util.List;
 public class JsonList {
 
     private String name;
-    private List<String> jsonList = new ArrayList<>();
+    private List<String> listOfJson = new ArrayList<>();
 
     public JsonList(String name) {
         this.name = name;
     }
 
     public void addJsonElement (String jsonElement) {
-        jsonList.add(jsonElement);
+        listOfJson.add(jsonElement);
     }
 
     public String getName() {
@@ -24,16 +24,16 @@ public class JsonList {
         this.name = name;
     }
 
-    public void setJsonList(List<String> jsonList) {
-        this.jsonList = jsonList;
+    public void setListOfJson(List<String> listOfJson) {
+        this.listOfJson = listOfJson;
     }
 
-    public List<String> getJsonList() {
-        return List.copyOf(jsonList);
+    public List<String> getListOfJson() {
+        return List.copyOf(listOfJson);
     }
 
     @Override
     public String toString() {
-        return name + ": " + jsonList.toString();
+        return name + ": " + listOfJson.toString();
     }
 }
