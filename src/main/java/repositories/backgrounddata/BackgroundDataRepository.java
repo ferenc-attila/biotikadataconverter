@@ -1,4 +1,4 @@
-package repositories;
+package repositories.backgrounddata;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 

@@ -1,4 +1,4 @@
-package tables.data;
+package tables.bioticdata;
 
 public interface BioticData {
 

@@ -1,4 +1,4 @@
-package repositories;
+package repositories.backgrounddata;
 
 import javax.sql.DataSource;
 import java.util.List;

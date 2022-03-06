@@ -1,8 +1,8 @@
-package tables.data;
+package tables.bioticdata;
 
-import tables.data.properties.ObservationProperties;
-import tables.data.properties.RecordingProperties;
-import tables.data.properties.ZoologyProperties;
+import tables.bioticdata.properties.ObservationProperties;
+import tables.bioticdata.properties.RecordingProperties;
+import tables.bioticdata.properties.ZoologyProperties;
 
 public class Zoology implements BioticData {
 

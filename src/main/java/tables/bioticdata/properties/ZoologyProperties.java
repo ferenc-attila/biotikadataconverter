@@ -1,4 +1,4 @@
-package tables.data.properties;
+package tables.bioticdata.properties;
 
 import tables.backgrounddata.Activity;
 import tables.backgrounddata.Age;

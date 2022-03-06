@@ -1,26 +1,24 @@
-package repositories;
+package repositories.backgrounddata;
 
 import javax.sql.DataSource;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FloraDao extends BackgroundDataRepository {
+public class FaunaDao extends BackgroundDataRepository {
 
-    public FloraDao(DataSource dataSource) {
+    public FaunaDao(DataSource dataSource) {
         super(dataSource);
-        this.setTableName("FLORA");
+        this.setTableName("FAUNA");
     }
 
     @Override
     protected List<String> readBackgroundData() {
         List<String> result = new ArrayList<>();
         this.getJdbcTemplate().query("SELECT * FROM ?",
-                (rs, rowNum) -> result.add(rs.getDouble("KOD") + ";"
-                        + rs.getLong("TAXONKOD") + ";"
+                (rs, rowNum) -> result.add(rs.getLong("KOD") + ";"
                         + rs.getString("LATIN_NEV") + ";"
-                        + rs.getInt("FONTOSSAG") + ";"
-                        + rs.getInt("EGYSEG") + ";"
-                        + rs.getLong("SETUP")
+                        + rs.getLong("STAXON" + ";"
+                        + rs.getLong("FONTOSSAG"))
                 ), this.getTableName());
         return result;
     }
