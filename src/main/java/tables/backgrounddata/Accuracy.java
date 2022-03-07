@@ -1,5 +1,7 @@
 package tables.backgrounddata;
 
+import java.util.Objects;
+
 public class Accuracy {
 
     private Long code;
@@ -8,6 +10,24 @@ public class Accuracy {
     public Accuracy(Long code, String description) {
         this.code = code;
         this.description = description;
+    }
+
+    @Override
+    public String toString() {
+        return code + ";" + description;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Accuracy accuracy = (Accuracy) o;
+        return code.equals(accuracy.code) && description.equals(accuracy.description);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(code, description);
     }
 
     public Long getCode() {
